@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% - include ('./partials/head') %>
+<body>
+    <h1>Estas en la pagina de detalles de heroes</h1>
+    <ul> 
+        <% if (nombre == '') { %>
+            No encontramos al científico indicado para mostrar su biografía
+        <% } else { %>
+            <h1><%= nombre %></h1>
+            <p><%= resenia %></p>
+
+            <% } %>
+    </ul> 
+
+</body>
+</html>

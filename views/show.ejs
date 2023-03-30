@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% - include ('./partials/head') %>
+<body>
+    <h1>Estas en la pagina de información general de los heroes</h1>
+
+    <% if (showNombre.length == 0) {  %>
+        <p>
+            No encontramos al científico indicado. Por favor, elija otro id
+        </p>
+
+    <% } else {  %>
+        <p>
+            <% for (let i = 0; i<showNombre.length; i++) { %>
+                Hola, mi nombre es <%= showNombre[i].nombre %> y soy
+                <%= showNombre[i].profesion %>
+            <% } %>
+        </p>
+    <% } %>
+</body>
+</html>
